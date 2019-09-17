@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="Blue Pearl is top website design and development firm in Pune.
+        We pride ourselves on delivering innovative, digital experiences that make an impact.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    {%block title%}{%endblock%}
+    <!-- Favicon -->
+    <link rel="icon" href='{% static "img/core-img/favicon.png" %}'>
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href='{% static "style.css" %}'>
+	
+	<!-- new style files -->
+    <!-- Plugin-CSS -->
+    
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="uzaNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="{% url 'home'%}"><img src='{% static "img/core-img/logo.png" %}' alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="current-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about-us' %}">About</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'work' %}">Work</a></li>
+                                <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                <li><a href="{% url 'contact-us' %}">Contact</a></li>
+                            </ul>
+
+                            <!-- Get A Quote -->
+
+                            <!-- Login / Register -->
+
+
+                            <!-- Search Icon -->
+
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+{% block content %}{% endblock %}
+
+
+    <!-- ***** Newsletter Area Start ***** -->
+
+    <!-- ***** Newsletter Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Contact Us</h4>
+
+                        <!-- Footer Content -->
+                        <div class="footer-content mb-15">
+                            <h3>+91 95795 91713</h3>
+                            <p>Sanswad Road, Kondhwa Annexe, Pune, Maharashtra 411048 <br> hello.colorlib@gmail.com</p>
+                        </div>
+                        <p class="mb-0">Mon - Fri: 9:00 - 19:00 <br>
+                            Closed on Weekends</p>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Quick Link</h4>
+
+                        <!-- Nav -->
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about-us' %}">About</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'work' %}">Work</a></li>
+                                <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                <li><a href="{% url 'contact-us' %}">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <h4 class="widget-title">Work Example</h4>
+
+
+                        <nav>
+                            <ul class="our-link">
+                                <li><a href="#">Website </a></li>
+                                <li><a href="#">Photo Sharing Website</a></li>
+                                <li><a href="#">Writers/Authors Website</a></li>
+                                <li><a href="#">Community Building</a></li>
+                                <li><a href="{% url 'contact-us' %}">Online Business</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">About Us</h4>
+                        <p>Blue Pearl is firm with creative, skilled and experienced team and provide Website development
+                            and designing service according to your requirements. We make perfect website for our clients.</p>
+
+
+                        <!-- Social Info --
+                        <div class="footer-social-info">
+                            <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS Files ******* -->
+    <!-- jQuery js -->
+    <script src='{% static "js/jquery.min.js" %}'></script>
+    <!-- Popper js -->
+    <script src='{% static "js/popper.min.js" %}'></script>
+    <!-- Bootstrap js -->
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
+    <!-- All js -->
+    <script src='{% static "js/uza.bundle.js" %}'></script>
+    <!-- Active js -->
+    <script src='{% static "js/default-assets/active.js" %}'></script>
+
+</body>
+
+</html>
